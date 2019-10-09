@@ -1,0 +1,86 @@
+body{
+    background: #ffffff;
+    font-family: 'Chelsea Market', "cursive", "arial","sans-serif","serif";
+    }
+
+#parent{
+      background: #000000;
+      border: 1px solid #ffffff;
+      width: 80%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;/*centers region in browser*/
+      text-align: center;/*centers content in the region*/
+      padding: 10px;
+      box-sizing: border-box;/*compensates for padding enlargemt*/
+      box-shadow: #777777 0px 0px 10px;/*for glow use "0" for 1st px "left/right" 2nd px"top/bottom" 3rd px "weight"*/
+      }
+
+     #header{
+           background-color: #401e1e;
+           width: 100%;
+           height: 20%;
+           margin-left: auto;
+           margin-right: auto;/*centers region in browser*/
+           text-align: center;/*centers content in a region*/
+           padding: 10px;
+           box-sizing: border-box;
+           border-radius: 10px;
+           color: #ffffff
+            }
+     #content{
+           background: #ffffff;
+           width: 100%;
+           height: 70%;
+           margin-top: 10px;
+           margin-left: auto;
+           margin-right: auto;/*centers region in browser*/
+           text-align: center;/*centers content in a region*/
+           padding: 10px;
+           box-sizing: border-box;
+           overflow: scroll;
+           border-radius: 10px;
+           font-family: 'Architects Daughter', "cursive","sans-serif";
+           }
+
+     #footer{
+           background: #401e1e;
+           width: 100%;
+           height: 6%;
+           margin-top: 10px;
+           margin-left: auto;
+           margin-right: auto;/*centers region in browser*/
+           text-align: center;/*centers content in a region*/
+           padding: 10px;
+           box-sizing: border-box;
+           border-radius: 10px;
+           font-family: 'Chelsea Market', "cursive", "sans-serif";
+           color: #ffffff;
+           }
+h1{
+  margin-top: 0px;
+  font-size: 2.4em;/*em for size unit. 2 is the set size for h1 header*/
+  }
+
+.pic1{
+  width: 50%;
+  border: 2px solid #ffffff;
+  }
+.text1{
+  font-size: 1.0em;
+  color: #000000;
+  line-height: 1.2em;
+  text-align: center;
+  font-family: 'Architects Daughter',cursive;
+  }
+  .text2{
+    font-size: 1.8em;
+    color: #000000;
+    line-height: 1.2em;
+    text-align: center;
+    font-family: 'Chelsea Market', sans-serif;
+    }
+a:link{text-decoration: none; color: #ffffff; margin: 10px; background: #401e1e; padding: 3px; border-radius: 6px;}
+a:visited{text-decoration: none; color: #ffffff; margin: 10px; background: #401e1e; padding: 3px; border-radius: 6px;}
+a:active{text-decoration: none; color: #ffffff; margin: 10px; background: #401e1e; padding: 3px; border-radius: 6px;}
+a:hover{text-decoration: none; color: #401e1e; margin: 10px; background: #ffffff; padding: 3px; border-radius: 6px;}

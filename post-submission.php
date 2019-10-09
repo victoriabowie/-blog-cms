@@ -20,7 +20,7 @@
                 
                 <label for="content">Content</label>
                 <textarea name="content" id="content" placeholder="Content"></textarea>
-                <button type="submit" value="Submit Entry">Submit</input>
+                <button type="submit" value="Submit">Submit</input>
             </form>
         </main>
         <?php include 'footer.php' ?>

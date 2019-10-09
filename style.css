@@ -1,86 +1,129 @@
-body{
-    background: #ffffff;
-    font-family: 'Chelsea Market', "cursive", "arial","sans-serif","serif";
-    }
-
-#parent{
-      background: #000000;
-      border: 1px solid #ffffff;
-      width: 80%;
-      height: 100%;
-      margin-left: auto;
-      margin-right: auto;/*centers region in browser*/
-      text-align: center;/*centers content in the region*/
-      padding: 10px;
-      box-sizing: border-box;/*compensates for padding enlargemt*/
-      box-shadow: #777777 0px 0px 10px;/*for glow use "0" for 1st px "left/right" 2nd px"top/bottom" 3rd px "weight"*/
-      }
-
-     #header{
-           background-color: #401e1e;
-           width: 100%;
-           height: 20%;
-           margin-left: auto;
-           margin-right: auto;/*centers region in browser*/
-           text-align: center;/*centers content in a region*/
-           padding: 10px;
-           box-sizing: border-box;
-           border-radius: 10px;
-           color: #ffffff
-            }
-     #content{
-           background: #ffffff;
-           width: 100%;
-           height: 70%;
-           margin-top: 10px;
-           margin-left: auto;
-           margin-right: auto;/*centers region in browser*/
-           text-align: center;/*centers content in a region*/
-           padding: 10px;
-           box-sizing: border-box;
-           overflow: scroll;
-           border-radius: 10px;
-           font-family: 'Architects Daughter', "cursive","sans-serif";
-           }
-
-     #footer{
-           background: #401e1e;
-           width: 100%;
-           height: 6%;
-           margin-top: 10px;
-           margin-left: auto;
-           margin-right: auto;/*centers region in browser*/
-           text-align: center;/*centers content in a region*/
-           padding: 10px;
-           box-sizing: border-box;
-           border-radius: 10px;
-           font-family: 'Chelsea Market', "cursive", "sans-serif";
-           color: #ffffff;
-           }
-h1{
-  margin-top: 0px;
-  font-size: 2.4em;/*em for size unit. 2 is the set size for h1 header*/
-  }
-
-.pic1{
-  width: 50%;
-  border: 2px solid #ffffff;
-  }
-.text1{
-  font-size: 1.0em;
-  color: #000000;
-  line-height: 1.2em;
-  text-align: center;
-  font-family: 'Architects Daughter',cursive;
-  }
-  .text2{
-    font-size: 1.8em;
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #000000;
-    line-height: 1.2em;
+}
+
+::selection {
+    background: #8ee3f5;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #00BCD4;
+}
+
+/* Header */
+header {
+    background-color: #f189b5;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0px 30px;
+    color: #000000;
+}
+
+/* Navitaion */
+nav {
+    background-color: #f189b5;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0, 0.15);
+}
+
+nav a {
+    margin: 10px;
+    padding: 10px;
+    color: #000000;
+    border: 2px solid #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+nav a:hover {
+    cursor: pointer;
+    background-color: #000000;
+    color: #f189b5;
+}
+
+/* Main */
+main {
+    min-height: calc(100vh - 200px);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Homepage (index) */
+.blog-list li {
+    border-bottom: 1px solid #a8e0ff;
+    color: #000000;
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Post */
+.post-title {
     text-align: center;
-    font-family: 'Chelsea Market', sans-serif;
-    }
-a:link{text-decoration: none; color: #ffffff; margin: 10px; background: #401e1e; padding: 3px; border-radius: 6px;}
-a:visited{text-decoration: none; color: #ffffff; margin: 10px; background: #401e1e; padding: 3px; border-radius: 6px;}
-a:active{text-decoration: none; color: #ffffff; margin: 10px; background: #401e1e; padding: 3px; border-radius: 6px;}
-a:hover{text-decoration: none; color: #401e1e; margin: 10px; background: #ffffff; padding: 3px; border-radius: 6px;}
+}
+
+.post-author {
+    font-style: italic;
+    text-align: right;
+    font-size: 16px;
+}
+
+/* Post Submission */
+.post-submissions-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.post-submissions-form input[type=text], 
+.post-submissions-form input[type=date],
+.post-submissions-form textarea {
+    border: 1px solid #8ee3f5;
+    border-radius: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.post-submissions-form textarea {
+    max-width: 900px;
+    min-height: 200px;
+}
+
+.post-submissions-form button {
+    height: 40px;
+    width: 150px;
+    background-color: #f189b5;
+    color: #000000;
+    border: none;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    height: 50px;
+    background-color: #f189b5;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
